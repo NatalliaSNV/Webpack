@@ -11,6 +11,11 @@ console.log(mode + ' mode')
 
 module.exports = {
   mode: mode,
+  devServer: {
+    port: 8080,
+    hot: true,
+    static: path.__dirname,
+  },
   entry: {
     main: path.resolve(__dirname, './src/index.js'),
   },
